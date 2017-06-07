@@ -1,5 +1,6 @@
 {
-  "name": {
-    "required": true
+  "Upload": {
+    "required": true,
+    "type": "image"
   }
 }
