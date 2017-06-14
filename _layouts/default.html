@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
-  <body>
-    <div>
+  {% include head.html %}
+  <body class="{{page.class}}" {% if page.parent != 'home' and page.class !='vcard grid col-4 custompage' and page.class !='vcard grid col-3 custompage' %} id="inner" {% endif %}>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ5ZGMD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+      {% include header.html %} 
       
         {{ content }}
-      
-    </div>
+        
+     {% if page.parent != 'home' %} 
+      <div class="hidden-xs hidden-sm">   
+          {% include footer.html %}
+      </div> 
+    <div class="mobile visible-xs visible-sm">
+       {% include footer.html %}  
+       {% else %}
+        {% include footer.html %}  
+       {% endif %}
+       
   </body>
 </html>

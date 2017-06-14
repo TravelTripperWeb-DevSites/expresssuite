@@ -1,0 +1,131 @@
+.hero-content-outer {
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 248px;
+    max-width: 220px;
+    position: absolute;
+    padding: 3px;
+    
+     @media (min-width: $screen-xs-min) {
+     	border: 2px solid rgba(255, 255, 255, 0.75);
+     	padding: 26px;
+        max-width: 500px;
+        
+    }
+    @media (min-width: $screen-sm-min) {
+    	 top: 280px;
+         max-width: 700px;
+    }
+     @media (min-width: $screen-md-min) {
+       	 
+        max-width: 800px;
+    }
+    
+    @media (min-width: $screen-lg-min) {
+        
+        max-width: 835px;
+    }
+
+   
+    .hero-content-inner {
+
+    	position:relative;
+
+    	.sale{
+
+	    		    	width: 50px;
+					    z-index: 3;
+					    top: -29px;
+					    left: -32px;
+					    position:absolute;
+
+					     @media (min-width: $screen-xs-min) {
+
+			    		    width: 57px;
+						    top: -38px;
+						    left: -38px;
+
+					    }
+
+					    @media (min-width: $screen-sm-min) {
+
+					    		width: 84px;
+							    top: -45px;
+							    left: -45px;
+
+					    }
+
+
+
+    	}
+
+
+        .container-fluid {
+
+            @media (min-width: $screen-xs-min) {
+                display: table;
+                width: 100%;
+            }
+            .col-xs-5,
+            .col-xs-7 {
+            		 float: none;
+            		 width:auto;
+                @media (min-width: $screen-xs-min) {
+                    display: table-cell;
+                    float: none;
+                }
+            }
+            .col-xs-5 {
+
+                @media (min-width: $screen-xs-min) {
+                    width: 43.88%;
+                    vertical-align: middle;
+                }
+            }
+            .col-xs-7 {
+
+                height: 44px;
+                position:relative;
+                
+                @media(min-width: $screen-xs-min) {
+                    width: 56.12%;
+                    height: auto;
+
+                }
+ 
+
+
+                .learn-more-anchor{
+
+    					position:absolute;
+    					left:0;
+    					right:0;
+    					top:0;
+    					bottom:0;
+
+    			}
+            }
+            .bgimg-align {
+            	
+            	    background-position: -46px 62px;
+                    background-size: 304px;
+            	 @media(min-width: $screen-xs-min) {
+            	 	background-position: top center;
+	                background-repeat: no-repeat;
+	                background-size: cover;
+	                
+            	 }
+                
+            }
+        }
+        .no-padding {
+            padding: 0px;
+        }
+        img {
+            width: 100%
+        }
+    }
+    
+}

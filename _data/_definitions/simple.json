@@ -1,9 +1,0 @@
-{
-  "Upload": {
-    "required": true,
-    "type": "image"
-  },
-  "Description": { 
-    "type": "richtext"
-  }
-}

@@ -1,0 +1,93 @@
+/*Travel Agent Awards Form*/
+.travel-agent-rewards{
+	 background:#ffffff;
+	 padding-bottom:50px; 
+	 h3{
+		font-size: 32px;line-height: 34px;color: #a78f61;font-weight: bold;font-family: 'latolight'; text-align:center; margin:0 auto 40px;
+	 }
+	 form{
+		max-width:80%;margin:0 auto;
+		fieldset{
+			&.controls {
+				z-index: 1 !important;
+				input{ margin: 10px 0 0 10px;}
+				margin:30px 0;
+			}
+		}
+		legend{
+			display: block;
+			width: 100%;
+			padding: 0;
+			margin-bottom: 20px;
+			font-size: 21px;
+			line-height: inherit;
+			color: #333333;
+			border: 0;
+			border-bottom: 1px solid #e5e5e5;
+		}
+		
+		p{
+			display: block;
+			width: 100%;
+			padding: 5px 0;
+			line-height: 26px;
+			vertical-align: middle;
+			background: #fcfcfd;
+			margin-bottom: 1px;
+			&.odd2{background: #ffffff;}
+			&.align-center{ text-align:center;}
+			label {
+				width: 44%;
+				font-size: 13px;
+				float: left;
+				text-align: right;
+				margin: 5px 10px 0 0;
+				line-height: 26px;
+				display: inline-block;
+    			max-width: 100%;
+    			font-weight: bold;
+				font-family: 'latolight';
+				em{
+					color: red;
+					font-size: 16px;
+					font-weight: normal;
+					line-height: 10px;
+					padding-right: 5px;
+					font-style: italic;
+				}
+				
+			}
+			input[type='text']{
+				border: 1px solid #a78f61;
+				background: #ffffff;
+				height: 33px;
+				padding: 0 10px;
+				font: 13px/23px 'mulilight';
+				color: #535353;
+				resize: none;
+				width: 163px;
+				line-height: 33px;	
+			}
+			textarea{
+				border: 1px solid #a78f61;
+				background: #ffffff;
+				padding: 0 10px;
+				font: 13px/23px 'mulilight';
+				color: #535353;
+				resize: none;
+				width: 163px;
+				line-height: 33px;	
+			}
+			
+			select{
+				border: 1px solid #a78f61;
+				color: #535353;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				padding-right: 30px;
+				width:160px; height:35px; background:#fff; border-radius:0px;
+			}
+		}
+		
+	 }
+}

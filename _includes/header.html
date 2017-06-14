@@ -1,0 +1,209 @@
+<script type="text/javascript">
+   $(document).ready(function () {
+      var wht = $(window).innerHeight(); 
+       $(".navbar-collapse").css('max-height', wht - 51);
+           $(".navbar-toggle").on("click", function () {
+                $(this).toggleClass("active"); 
+                
+                  $(".navbar-collapse").toggleClass("in");
+            
+           });
+
+      }); 
+</script>
+<header id="header">
+         <a id="logo" class="fn org home" href="/" title="Triumph Hotels">Triumph Hotels<i></i></a>  <!--div id="homepage-badge"> <a id="badge" href="http://sale.triumphhotels.com" title="Triumph Sale">Triumph Sale</a> </div-->
+          
+      
+         
+             
+             
+        <span id="caption-members" class="fn org home members-only-signup"  title=""></span> 
+        <a href="/members-only/" id="membersonly" class="button membersonly mobile-only join">JOIN TODAY</a>
+         <div id="booking">
+            <p>Book Now</p>
+         </div>
+         <div class="booking_tel">(855) 787-4867</div>
+         <div id="bookingexpanded">
+            <div class="closeform">
+               <p>Book Now</p>
+               <span class="cross"></span> 
+            </div>
+            <form action="https://gc.synxis.com/rez.aspx?" method="get" target="_blank" class="form bookingform">
+            <input type="hidden" name="chain" value="16087">
+            <input type="hidden" name="start" value="availresults">
+               <fieldset>
+                  <legend></legend>
+                  <p class="select hotelselect">
+                     <label for="hotel">Hotel:</label> 
+                     <select id="hotel" name="hotel" class="validate[required]">
+                        <option disabled="disabled" selected="selected" val="0">Select A Hotel</option>
+                        <option value="60849">The Iroquois New York</option>
+                        <option value="60998">Hotel Chandler</option>
+                        <option value="60633">Hotel Belleclaire</option>
+                        <option value="20986">The Evelyn</option>
+                        <option value="16065">Cosmopolitan Hotel – TriBeCa</option>
+                        <option value="60994">Washington Jefferson Hotel</option>
+                        <option value="66316">Hotel Edison</option>
+                     </select>
+                  </p>
+                  <div class="inputdates">
+                     <p class="checkin"><label for="checkin" class="date">Check-In:</label> <input type="text" class="text date-pick dp-applied" id="checkin" name="arrive"></p>
+                     <p class="checkout"> <label for="checkout" class="date">Check-Out:</label> <input type="text" class="text date-pick dp-applied" id="checkout" name="depart"></p>
+                  </div>
+                  <div class="selects">
+                     <p class="select roomselect">
+                        <label for="rooms">Rooms:</label> 
+                        <select id="rooms" name="rooms">
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                        </select>
+                     </p>
+                     <p class="select guestselect">
+                        <label for="guests">Guests:</label> 
+                        <select id="guests" name="guests">
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                           <option value="5">5</option>
+                        </select>
+                     </p>
+                  </div>
+                  <p class="submitform"> 
+                  <input type="submit" value="Check Availability" class="button" onclick="if($('#sSelect_hotel .selectedTxt').text() != 'Select A Hotel'){ var s=s_gi(s_account); s.linkTrackVars='events,products'; s.linkTrackEvents='event6,scOpen'; s.events='event6,scOpen'; s.products=';{$siteHotelName}'; (s.tl(this,'o','Booking Initiated') );}"> </p>
+                  <a href="/guarantee/" class="brg">Best Rate Guarantee</a> 
+               </fieldset>
+            </form>
+         </div>
+     <!--reponsive mobile menu -->
+     <div  class="navbar navbar-inverse navbar-fixed-top">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="/">Triumph Hotel</a>
+       </div>
+       <div class="navbar-collapse collapse">
+         <ul class="nav navbar-nav">
+                     {% for items in obj.topmenu %} 
+       
+        {% if items.dropdown == "yes" %}
+          <li class="parent">
+                   <a href="{{items.url}}"  
+                   {% if items.parent == page.parent %}
+                     class="active" 
+                    {% endif %} 
+                   >{{items.name}}</a> 
+                   <ul>
+                   {% for subitems in items.drop-links %}
+                      {% if subitems.dropdown == "yes" %}
+                         <li class="parent">
+                                  <a href="{{subitems.url}}">{{subitems.name}}</a> 
+                                  <ul>
+                                  {% for subitem in subitems.drop-links %}
+                                     <li> <a href="{{subitem.url}}">{{subitem.name}}</a> </li>
+                                  {% endfor %}
+                                  </ul>
+                          </li>
+                        {% else if %}
+
+                          
+                          <li> <a href="{{subitems.url}}">{{subitems.name}}</a> </li>
+
+                        {% endif %}
+                      
+                   {% endfor %}
+                   </ul>
+           </li>
+         {% else if %}
+
+           
+           <li> <a href="{{items.url}}"  {% if items.parent == page.parent %}
+                     class="active" 
+                    {% endif %} >{{items.name}}</a> 
+          
+           </li>
+
+         {% endif %}
+ 
+    {% endfor %}
+                 </ul>
+       </div>
+     </div>
+
+      <!--main desktop menu -->
+         <nav id="main-menu"> 
+                 
+         {% include nav.html %}
+        
+ {% comment %}
+            <ul>
+               <li> <a href="/" class="active">Home</a> <span><a class="firstelement" href="/">Back to the homepage</a></span> </li>
+               <li class="parent">
+                  <a href="/key/">Key To The City</a> 
+                  <ul>
+                     <li> <a href="/key/architecture/">Architecture</a> <span><a class="firstelement" href="/">Back to the homepage</a></span> </li>
+                     <li> <a href="/key/neighborhood/">Neighborhood</a> </li>
+                     <li> <a href="/key/service/">Service</a> </li>
+                     <li> <a href="/key/history/">History</a> </li>
+                     <li> <a href="/key/design/">Design</a> </li>
+                  </ul>
+               </li>
+               <li class="parent">
+                  <a href="/hotels/">Hotels</a> 
+                  <ul>
+                     <li class="parent">
+                        <a href="/hotels/luxury/">Boutique Luxury</a> <span><a class="firstelement" href="/">Back to the homepage</a></span> 
+                        <ul>
+                           <li> <a href="/hotels/luxury/iroquois/">The Iroquois New York</a> <span><a class="firstelement" href="/">Back to the homepage</a></span> </li>
+                           <li> <a href="/hotels/luxury/chandler/">Hotel Chandler</a> </li>
+                        </ul>
+                     </li>
+                     <li class="parent">
+                        <a href="/hotels/affordable/">Accessible Luxury</a> 
+                        <ul>
+                           <li> <a href="/hotels/affordable/belleclaire/">Hotel Belleclaire</a> <span><a class="firstelement" href="/">Back to the homepage</a></span> </li>
+                           <li> <a href="/hotels/affordable/cosmopolitan/">Cosmopolitan Hotel - TriBeCa</a> </li>
+                           <li> <a href="/hotels/affordable/evelyn/">The Evelyn</a> </li>
+                           <li> <a href="/hotels/affordable/wj/">Washington Jefferson Hotel</a> </li>
+                           <li> <a href="/hotels/affordable/edison/">Hotel Edison</a> </li>
+                        </ul>
+                     </li>
+                     <li> <a href="/guarantee/">Reservations</a> </li>
+                     <li> <a href="/map/">Location</a> </li>
+                  </ul>
+               </li>
+               <li class="parent">
+                  <a href="/restaurants/">Dining & Cocktails</a> 
+                  <ul>
+                     <li> <a href="/restaurants/triomphe/">Triomphe Restaurant & Lounge</a> <span><a class="firstelement" href="/">Back to the homepage</a></span> </li>
+                     <li> <a href="/restaurants/lanterns/">Lantern’s Keep</a> </li>
+                     <li> <a href="/restaurants/chandler-bar/">Hotel Chandler Bar</a> </li>
+                     <li> <a href="/restaurants/the-rum-house/">The Rum House</a> </li>
+                  </ul>
+               </li>
+               <li class="parent">
+                  <a href="/planners/">Events</a> 
+                  <ul>
+                     <li> <a href="/planners/events/">Meeting/Event Space</a> <span><a class="firstelement" href="/">Back to the homepage</a></span> </li>
+                     <li> <a href="/planners/rfp/">Meetings RFP</a> </li>
+                  </ul>
+               </li>
+               <li> <a href="/specials/">Promotions</a> </li>
+               <li class="parent">
+                  <a href="/walkingtours/">Walking Tours</a> 
+                  <ul>
+                     <li> <a href="/walking-tours-rfp/">Walking Tours Reservations</a> <span><a class="firstelement" href="/">Back to the homepage</a></span> </li>
+                  </ul>
+               </li>
+               <li> <a href="/travel-agent-rewards/">Travel Agent Rewards</a> </li>
+               <li> <a href="/members-only/">Members Only</a> </li>
+            </ul>
+
+         {% endcomment %}
+         </nav>    
+      </header>

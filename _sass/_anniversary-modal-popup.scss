@@ -1,0 +1,126 @@
+/* Email popup styles */
+
+#email-popup{
+	.modal-dialog {
+		position: absolute;
+		margin: 0 auto;
+		left: 15px;
+		right: 30px;
+		top: 50%;
+		transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		border: 1px solid rgba(255, 255, 255, 0.4);
+		padding: 15px 10px;
+			@media (min-width: $screen-sm-min){
+				padding: 20px;
+				padding: 15px;
+			}
+	}
+	.modal-content {
+		border-radius: 0;
+		box-shadow: none;
+	}
+	.modal-header {
+		padding: 20px;
+		border: none;
+	}
+	.modal-body {
+		padding: 20px 15px;
+			@media (min-width: $screen-sm-min){
+				padding: 20px 15px 40px 15px;
+			}
+	}
+	.close {
+    font-weight: normal;
+    font-size: 33px;
+    position: absolute;
+    top: -22px;
+    right: -22px;
+    border-radius: 50% 50%;
+    background-color: #363532;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    line-height: 66px;
+	color: $white;
+	opacity: 1;
+	text-shadow: none;
+	}
+	.modal-title {
+		font-family: $secondary-light;
+		text-transform: uppercase;
+		font-size: 17px;
+		letter-spacing: 1px;
+		color: $heading;
+		line-height: 28px;
+			@media (min-width: $screen-sm-min){
+				font-size: 24px;	
+			}
+	}
+	.form-group {
+		max-width: 280px;
+		margin: 0 auto;
+			@media (min-width: $screen-sm-min){
+				width: 320px;
+			}
+	}
+	.form-control {
+		border-radius: 0;
+		font-family: $secondary-book;
+		font-size: 17px;
+		border: none;
+		border-bottom: solid 1px #c3c1c1;
+		box-shadow: none;
+		height: 50px;
+		line-height: 50px;
+		padding: 15px 12px;
+		text-align: center;
+			&:focus {
+				box-shadow: none;
+			}
+	}
+	.btn-form {
+	font-family: $secondary-medium;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: $white;
+	letter-spacing: 1px;
+	display: block;
+	padding: 18px 20px;
+	width: 100%;
+	background-color: $heading;
+	text-align: center;
+	border: none;
+	margin: 30px auto 0 auto;
+	letter-spacing: 2px;
+	transition: all 0.5s;
+		&:hover {
+			background-color: #8f7a4c;
+		}
+	}
+	.success {
+		font-family: $secondary-medium;
+		text-align: center;
+		font-size: 16px;
+		text-transform: uppercase;
+		color: $text;
+	}
+}
+.modal-backdrop.in {
+	opacity: 0.8;
+}
+
+.ok {
+  font-family: $secondary-medium;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $text;
+ }
+
+ .anniversary-banner-resize{
+
+ 	
+ }

@@ -1,0 +1,36 @@
+---
+layout: default
+title: Newsletter | Triumph Hotels
+excerpt: Read NYC hotel news about Triumph, offering expert takes on the accommodations, dining, service, and more about our Manhattan boutique hotels.
+class: vcard
+parent: generic
+---
+
+ <div class="innerpage" id="viewport">
+ 		<div id="photos">
+         <div class="slideshow">
+            <figure> <img src="/assets/images/cms/cache/1400x998/49/382-49cab1af4b319bf29709758666a3a4fc.jpg"> </figure>
+         </div>
+       </div>
+      
+ 		<div id="content-area" class="closed">
+         {% assign pages = site.pages %}
+         <aside id="sidebar"> 
+            <nav id="submenu">
+               <h4><a href="/explore">New York City</a></h4>
+               <ul>
+                  {% for p in pages %}
+                    {% if p.url contains '/generic/' %}  
+                      <li><a href="{{p.url}}">{{ p.url  | remove: '/generic/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
+                    {% endif %}
+                  {% endfor %}                
+               </ul>
+            </nav>
+         </aside>
+         <section id="content">
+            {% regionblock  newsletter_content %}
+
+            {% endregionblock %}
+         </section>
+		</div>
+   

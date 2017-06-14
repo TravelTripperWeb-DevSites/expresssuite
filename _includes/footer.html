@@ -1,0 +1,39 @@
+ <footer id="footer" {% if page.parent == 'home' %} class="fixedfooter" {% endif %}> 
+ 			<div id="slidecaption"></div>
+            {% if page.url == "/" ||  page.url == "/index.html" %} 
+           	<div id="supersizedcontrols"> <a id="prevslide" class="load-item">Prev</a> <a id="nextslide" class="load-item">Next</a> <a id="fullscreen" class="active">Exit Full Screen</a> </div>
+            {% endif %}
+
+            <nav id="footer-menu">
+               <ul> 
+                {% for footerlink in obj.footer-links %} 
+                  {% if footerlink.parent == page.parent %} 
+                  <li> <a href="{{footerlink.url}}"  class="active">{{footerlink.name}}</a> </li>
+                  {% else if %}
+                    <li> <a href="{{footerlink.url}}">{{footerlink.name}}</a> </li>
+                  {% endif %} 
+                 {% endfor %}
+                  
+               </ul>
+            </nav>
+            <ul class="socialicons">
+               <li><a class="fbook" href="https://www.facebook.com/TriumphHotels" target="_blank" rel="nofollow" onclick="var s=s_gi(s_account); s.linkTrackVars='events,products'; s.linkTrackEvents='event7'; s.events='event7'; s.products=';Triumph Hotels'; (s.tl(this,'e','Triumph Hotels - Facebook - Website Referral') );">Facebook</a></li>
+               <li><a class="twitter" href="https://twitter.com/TriumphHotels" target="_blank" rel="nofollow" onclick="var s=s_gi(s_account); s.linkTrackVars='events,products'; s.linkTrackEvents='event7'; s.events='event7'; s.products=';Triumph Hotels'; (s.tl(this,'e','Triumph Hotels - Twitter - Website Referral') );">Twitter</a></li>
+               <li><a class="gplus" href="https://plus.google.com/117172606182242892525/about" target="_blank" rel="nofollow" onclick="var s=s_gi(s_account); s.linkTrackVars='events,products'; s.linkTrackEvents='event7'; s.events='event7'; s.products=';Triumph Hotels'; (s.tl(this,'e','Triumph Hotels - Google Plus - Website Referral') );">Google Plus</a></li>
+               <li><a class="instagram" href="http://instagram.com/triumphhotels" target="_blank" rel="nofollow" onclick="var s=s_gi(s_account); s.linkTrackVars='events,products'; s.linkTrackEvents='event7'; s.events='event7'; s.products=';Triumph Hotels'; (s.tl(this,'e','Triumph Hotels - Instagram - Website Referral') );">Instagram</a></li>
+               <li><a class="pinterest" href="https://www.pinterest.com/triumphhotels" target="_blank" rel="nofollow" onclick="var s=s_gi(s_account); s.linkTrackVars='events,products'; s.linkTrackEvents='event7'; s.events='event7'; s.products=';Triumph Hotels'; (s.tl(this,'e','Triumph Hotels - Pinterest - Website Referral') );">Pinterest</a></li>
+               <li><a href="/assets/share.html" class="share" title="Share This Site">Share</a></li>
+            </ul>
+            <ul class="socials">
+               <li class="plusone">
+                  <div class="g-plusone" data-href="http://www.triumphhotels.com/" data-size="medium"></div>
+               </li>
+               <li class="facebook">
+                  <span>
+                     <div class="fb-like" data-href="http://www.triumphhotels.com/" data-send="false" data-layout="button_count" data-show-faces="true"></div>
+                  </span>
+               </li>
+            </ul>
+         </footer>
+      </div>
+ 

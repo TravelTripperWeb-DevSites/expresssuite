@@ -1,0 +1,172 @@
+#triumph-popup {
+	&.hero {
+				background-position: top center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				margin: 5px;
+					@media (min-width: $screen-sm-min){
+						margin: 15px;
+					}
+			}
+	.close-popup {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		background-color: $heading;
+		color: $white;
+		width: 40px;
+		height: 40px;
+		border-radius: 50% 50%;
+		font-family: $secondary-medium;
+		text-align: center;
+		font-size: 20px;
+		line-height: 40px;
+		cursor: pointer;
+			@media (min-width: $screen-sm-min){
+				width: 50px;
+				height: 50px;
+				top: 15px;
+				right: 15px;
+				line-height: 50px;
+			}
+	}
+	.popup-content {
+		margin: 0 auto;	
+		position: absolute;
+		top: 130px;
+		max-width: 250px;
+		left: 0;
+		right: 0;
+		text-align: center;
+			@media (min-width: $screen-sm-min){
+				top: 50%;
+				transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				max-width: 680px;
+			}
+			@media (min-width: 1400px){
+				max-width: 906px;
+			}
+	}
+	.triumph-logo {
+			position: absolute;
+			left: 0;
+			top: 15px;
+			right: 0;
+			width: 130px;
+			margin: 0 auto;
+			transition: all 0.5s;
+				@media (min-width: $screen-sm-min){
+					width: 150px;
+				}
+				@media (min-width: $screen-md-min){
+					left: 35px;
+					top: 20px;
+					right: auto;
+					margin: 0;
+					width: 150px;
+				}
+				@media (min-width: 1550px){
+					width: 226px;
+				}
+				img {
+					width: 100%;
+				}
+		}
+		.btn-holder {
+			padding: 20px 0 30px 0;
+				@media (min-width: $screen-sm-min){
+					padding: 43px 0 0 0;
+				}
+		}
+	.btn-popup {
+		width: 250px;
+		display: inline-block;
+		font-family: $secondary-book;
+		background-color: $heading;
+		font-size: 16px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: $white;
+		text-align: center;
+		padding: 12px 15px;
+			@media (min-width: $screen-sm-min){
+				width: auto;
+				max-width: 284px;
+				padding: 12px 26px;
+				letter-spacing: 4px;
+				font-size: 18px;
+			}
+	}
+	.modal-dialog {
+		border: 2px solid rgba(255,255,255,0.75);
+		padding: 10px;
+		width: auto;
+		margin: 0 auto;	
+			@media (min-width: $screen-sm-min){
+				padding: 22px;
+			}
+	}
+	.modal-content {
+		border-radius: 0;
+		border: none;
+		box-shadow: none;
+		background-color: transparent;
+		position: relative;
+			.round-cta {
+				position: absolute;
+				width: 60px;
+				top: -40px;
+				left: -40px;
+					@media (min-width: $screen-md-min){
+						width: 70px;
+					}
+					@media (min-width: 1550px){
+						width: 84px;
+					}
+					img {
+						width: 100%;
+					}
+			}
+	}
+
+	.table-wrap {
+		img {
+			width: 100%;
+		}
+			@media (min-width: $screen-sm-min) {
+				display: table;
+				width: 100%;
+			}
+			.table-cell-wrap {
+				padding: 0;
+				@media (min-width: $screen-sm-min) {
+					display: table-cell;
+					float: none;
+					vertical-align: middle;
+				}
+				&.bg {
+					background-position: center center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					height: 150px;
+						@media (min-width: $screen-sm-min) {
+							height: auto;
+						}
+				}		
+			}
+			.col-sm-5 {
+				@media (min-width: $screen-sm-min) {
+					width: 43.823%;
+				}
+			}
+			.col-sm-7 {
+				@media (min-width: $screen-sm-min) {
+					width: 56.177%;
+				}
+			}
+	}
+	
+}

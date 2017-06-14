@@ -1,0 +1,7 @@
+{
+  "name": {}, 
+  "image": {"type":"image", "required": true }, 
+  "booknow": {"hint":"Enter book now button url"},
+  "CountryCode": {"type":"model","display_field": "name", "model_name":"country", "multiple" :true, "default_text": "Select Country","required": true},
+  "returnUser": {"type":"select", "options":["All","New","Return"],"required": true}
+}

@@ -1,0 +1,70 @@
+---
+layout: default
+title: Unique New York Hotels | Triumph Hotels
+excerpt: View our collection of unique New York hotels to see our authentic architecture, neighborhood-inspired design, and residential-style accommodations.
+class: vcard gallery
+parent: gallery
+---
+
+<div class="innerpage" id="viewport">
+         <div id="photos">
+            <div class="slideshow">
+               <figure> <img src="/assets/images/cms/cache/1400x998/a6/254-a6dc759d78e6c4f994dbf149074e4a3e.jpg"> </figure>
+            </div>
+         </div>
+         
+         <div id="content-area" class="closed">
+            <section id="content">
+               {% regionblock  gallery_content %}
+               <h1>Explore Our Unique New York Hotels</h1>
+               <h2>See Triumph&rsquo;s Properties</h2>
+               <p>Neighborhood-inspired, historically authentic, cosmopolitan, and above all comfortable, Triumph&rsquo;s unique New York hotels provide distinct experiences and unforgettable stays. View our collection of photos to see the residence-style accommodations, sleek common, spaces and architecturally unique boutique downtown NYC hotels in the Triumph collection. We look forward to your stay in our boutique hotels in New York City.</p>
+               <p></p>
+                {% endregionblock %}
+               <div class="galleries" style="min-height: 700px;">
+                  {% assign categories = site.data._models.gallery_categories | sort : "sort_order"  %}
+
+                  {% for cat in categories  %}
+                  <article class="gallery {% if forloop.index == 0 %} new-line {% endif %}">
+                     <h4><a href="#" data-gallery-id="{{cat.cat_id}}">{{cat.cat_name}}</a></h4>
+                     <a href="#" data-gallery-id="{{cat.cat_id}}"> <img src="{{cat.cat_thumb_image.url}}" alt="{{cat.thumb_alt}}"></a> <a href="#" data-gallery-id="{{cat.cat_id}}" class="thumbnail button"> </a>
+                  </article>
+                  {% endfor %}
+
+               </div>
+
+               <script type="text/javascript">
+                  var galleryJSON = galleryJSON || {};
+
+                  $.each({
+                  {% for cat in categories  %}
+                  "{{ cat.cat_id }}": {
+                     "id": "{{ cat.cat_id }}",
+                             "slug": "{{ cat.urlslug }}",
+                             "name": "{{ cat.cat_name }}",
+                             "title": "{{ cat.cat_name }}",
+                             "images": [
+                        {% assign counter2 = 0 %}
+                     {% assign catimages = site.data._models.gallery_images  %}
+                     {% for catimg in catimages  %}
+                     {% if cat.cat_id == catimg.category.cat_id %}
+                     {% assign counter2 = counter2 | plus:1 %}
+                     {% if counter2 > 1 %},{% endif %}
+                     {
+                        "image_id": "{{ catimg.img_id }}",
+                             "thumb": "{{ catimg.thumb_image.url }}",
+                             "full": "{{ catimg.full_image.url }}",
+                             "caption": "{{ catimg.img_caption }}"
+                     }
+                     {% endif %}
+                     {% endfor %}
+                  ]
+                  }{% unless forloop.last %},{% endunless %}
+                  {% endfor %}
+                  },function($index, $value) {
+                     galleryJSON[$index] = $value;
+                  });
+               </script>
+            </section>
+         </div>
+        

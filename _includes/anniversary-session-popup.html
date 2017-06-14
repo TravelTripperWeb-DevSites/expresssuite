@@ -1,0 +1,24 @@
+<div id="triumph-popup" class="modal fade hero" role="dialog" style="background-image:url(/images/anniversary-popup/hero.jpg);">
+<div class="triumph-logo"><a href="https://www.triumphhotels.com/" target="_blank"><img src="/images/anniversary-popup/triumph-logo.png" alt=""/></a></div>
+<div class="popup-content">
+  <div class="modal-dialog"> 
+    <!-- Modal content-->
+    <div class="modal-content table-wrap">
+    	<div class="col-sm-5 table-cell-wrap"><img src="/images/anniversary-popup/offer-details.png" alt=""/></div>
+        <div class="col-sm-7 table-cell-wrap bg" style="background-image:url(/images/anniversary-popup/block-right.jpg);"></div>
+        <div class="round-cta"><img src="/images/anniversary-popup/round-cta.png" alt=""/></div>
+    </div>
+  </div>
+  <div class="btn-holder"><a href="/anniversary-sale/" class="btn-popup">Book Now & Save</a></div>
+  </div>
+  <div class="close-popup" data-dismiss="modal">X</div>
+</div>
+
+<script type="text/javascript">
+    $(window).load(function(){
+		if(sessionStorage.getItem('popState') != 'shown'){
+        $('#triumph-popup').modal('show');
+        sessionStorage.setItem('popState','shown')
+    }	
+    });
+</script>

@@ -1,15 +1,12 @@
-
-gems:
-- jekyll-sitemap
-keep_files:
-- assets
-rsync_copy:
-- _assets
-exclude:
-- sitemap.json
-- media.json
-- old_media.json
-- models.json
-
+permalink: pretty
 default_lang: 'en'
 languages: ['en']
+
+
+
+
+page_gen:
+
+  - data: 'special-offers'
+    template: 'offer-details'
+    dir: 'specials'

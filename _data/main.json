@@ -1,0 +1,76 @@
+
+{  
+      "topmenu":[
+               {"name":"Home","url":"/", "parent":"home", "dropdown":"no",
+                "drop-links": [ 
+                    {"name":"Back to the homepage","url":"/", "parent":"home", "dropdown":"no"}
+                 ]}, 
+               {"name":"Key to the city","url":"/key/", "parent":"key", "dropdown":"yes",
+                 "drop-links": [
+                    {"name":"Architecture","url":"/key/architecture/", "parent":"key", "dropdown":"no"},
+                    {"name":"Neighborhood","url":"/key/neighborhood/", "parent":"key", "dropdown":"no"},
+                    {"name":"Service","url":"/key/service/", "parent":"key", "dropdown":"no"},
+                    {"name":"History","url":"/key/history/", "parent":"key", "dropdown":"no"},
+                    {"name":"Design","url":"/key/design/", "parent":"key", "dropdown":"no"}
+                 ]},
+               {"name":"Hotels","url":"/hotels/", "parent":"hotels", "dropdown":"yes",
+                 "drop-links": [
+                    {"name":"Boutique Luxury","url":"/hotels/luxury/", "parent":"hotels", "dropdown":"yes",
+                       "drop-links": [
+                          {"name":"The Iroquois New York","url":"/hotels/luxury/iroquois/", "parent":"hotels"},
+                          {"name":"Hotel Chandler","url":"/hotels/luxury/chandler/", "parent":"hotels"} 
+                       ]},
+                    {"name":"Accessible Luxury","url":"/hotels/affordable/", "parent":"hotels", "dropdown":"yes",
+                       "drop-links": [
+                          {"name":"Hotel Belleclaire","url":"/hotels/affordable/belleclaire/", "parent":"hotels"},
+                          {"name":"Cosmopolitan Hotel - TriBeCa","url":"/hotels/affordable/cosmopolitan/", "parent":"hotels"},
+                          {"name":"The Evelyn","url":"/hotels/affordable/evelyn/", "parent":"hotels"},
+                          {"name":"Washington Jefferson Hotel","url":"/hotels/affordable/wj/", "parent":"hotels"},
+                          {"name":"Hotel Edison","url":"/hotels/affordable/edison/", "parent":"hotels"} 
+                       ]},
+                    {"name":"Reservations","url":"/guarantee/", "parent":"hotels", "dropdown":"no"},
+                    {"name":"Location","url":"/map/", "parent":"hotels", "dropdown":"no"} 
+                 ]},
+               {"name":"Dining & Cocktails","url":"/restaurants/", "parent":"restaurants", "dropdown":"yes",
+                 "drop-links": [
+                    {"name":"Triomphe Restaurant & Lounge","url":"/restaurants/triomphe/", "parent":"restaurants", "dropdown":"no"},
+                    {"name":"Lantern’s Keep","url":"/restaurants/lanterns/", "parent":"restaurants", "dropdown":"no"},
+                    {"name":"Hotel Chandler Bar","url":"/restaurants/chandler-bar/", "parent":"restaurants", "dropdown":"no"},
+                    {"name":"The Rum House","url":"/restaurants/the-rum-house/", "parent":"restaurants", "dropdown":"no"} 
+                 ]},
+	        
+               {"name":"Meetings","url":"/planners/", "parent":"planners", "dropdown":"yes",
+                 "drop-links": [
+                    {"name":"Meeting/Event Space","url":"/planners/events/", "parent":"planners", "dropdown":"no"},
+                    {"name":"Meetings RFP","url":"/planners/rfp/", "parent":"planners", "dropdown":"no"} 
+                 ]}, 
+	      
+               {"name":"Promotions","url":"/specials/", "parent":"specials", "dropdown":"yes",
+                 "drop-links": [
+                    {"name":"FitReserve","url":"/special-amenities/", "parent":"specials", "dropdown":"no"},
+                    {"name":"NYC Fashion Week","url":"/specials/nyc-fashion-week.html", "parent":"specials", "dropdown":"no"} 
+                 ]},
+
+               {"name":"Walking Tours","url":"/walkingtours/", "parent":"walkingtours", "dropdown":"yes",
+                 "drop-links": [
+	{"name":"Walking Tours Reservations","url":"/walking-tours-rfp/", "parent":"walkingtours", "dropdown":"no"}
+
+                 ]},   
+               {"name":"Travel Agent Rewards","url":"/travel-agent-rewards/#overview-section", "parent":"travel-agent-rewards", "dropdown":"no"},
+               {"name":"Members Only","url":"/members-only/", "parent":"members-only", "dropdown":"no"}
+      ],
+        
+      "footer-links":[ 
+                        {"name":"Triumph Story","url":"/triumph/", "parent":"triumph"},
+                        {"name":"Press & Accolades","url":"/press/", "parent":"press"},
+                        {"name":"Media Resources","url":"/resources/", "parent":"resources"},
+                        {"name":"Contact","url":"/contact/", "parent":"contact"},
+                        {"name":"Careers","url":"/careers/", "parent":"careers"},
+                        {"name":"Connect","url":"/connect/", "parent":"connect"},
+                        {"name":"Site Map","url":"/sitemap/", "parent":"sitemap"},
+                        {"name":"Privacy","url":"/privacy/", "parent":"privacy"},
+                       {"name":"Map","url":"/map/", "parent":"map"},
+                       {"name":"Gallery","url":"/gallery/", "parent":"gallery"}
+                     ],
+  
+} 

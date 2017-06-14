@@ -1,0 +1,56 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NJ5ZGMD');</script>
+<!-- End Google Tag Manager -->
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/90af5ed8-ead7-4bd3-ae5b-7ac3a932caaa.css"/>
+  <link rel="stylesheet" href="{{ "/css/main2.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="/assets/gallery/themes/hebs/galleria.hebs.css">  
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <script> 
+   var templateURL = '/'; 
+   var currentPropertyId = null; 
+   var bookingEngineVars = [{"id":1,"property_id":null,"adapter_type":1,"default_booking_window":2,"default_booking_length":1,"default_number_of_adults":1},{"id":2,"property_id":1,"adapter_type":null,"default_booking_window":0,"default_booking_length":0,"default_number_of_adults":0}]; 
+   </script> 
+    
+   <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script> 
+   <script src="/js/scripts.min2.js"></script>
+  <script src="/skins/triumph/assets/parallax/scripts/scripts.min.js"></script>
+  <script type="text/javascript" id="__tracking-appmeasurement" src="/js/hebs-appmeasurement.js" async="async" defer="defer"></script> 
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD3N4VN7I5aLTyjkbMoC-aJzHVEb0BNmQ"></script> 
+<!--Start Guestfolio Signup Assets-->
+<script src="https://guestfolio.net/assets/embedded.js" type="text/javascript"></script>
+<!--End Guestfolio Signup Assets-->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '821305881334020'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" 
+src="https://www.facebook.com/tr?id=821305881334020&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+</head>
