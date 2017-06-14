@@ -1,0 +1,88 @@
+
+.stylish-select .SSContainerDivWrapper {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	z-index: 51;
+	width:100%;
+}
+
+.stylish-select ul.newList {
+	
+    background: #a78f61;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0;
+    z-index: 2;
+    border: 1px solid #fff;
+    overflow: auto;
+    overflow-x: hidden;
+    position: relative;
+    border-top: none;
+    max-height: 240px;
+
+}
+#booking ul.newList {
+	max-height: 100%;
+}
+.stylish-select ul.newList li {
+	line-height:15px;
+}
+.stylish-select ul.newList a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	padding: 2px 0 2px 5px;
+	margin: 0;
+	position: relative;
+}
+/*.stylish-select ul.newList a:hover {
+	color: #fff;
+	background: #000;
+}*/
+
+/*.stylish-select ul.newList a.hiLite {
+	color: #fff;
+	background: #4c4c4c;
+}*/
+
+.stylish-select ul.newList li a:focus {
+	-moz-outline: 0 none;
+	outline: 0 none;
+}
+.stylish-select .selectedTxt {
+	background:url(../images/sselect.png) 97% 13px no-repeat;
+	padding:0 25px 0 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #fff;
+	cursor:pointer;
+	z-index:9999;
+	border: 1px solid #fff;
+}
+.stylish-select .selectedTxt:hover {background-position:100% -31px;}
+#content .form fieldset.controls {z-index:1 !important;}
+.newListSelected {
+	height: 23px;
+	line-height:23px;
+	width:40px;
+	display:inline-block;
+	float:left;
+}
+#calendar-filter .newListSelected, #hebs-gallery .newListSelected {
+	background:#fff;
+	width:auto;
+}
+#calendar-filter .selectedTxt {padding-right:20px;overflow:visible;}
+/*#content .newListSelected {width:252px;}*/
+/*#content .selectedTxt:hover {border-color:#a6a6a6;}*/
+/*#content .selectedTxt, #content ul.newList {
+	border-color:#ccc;
+	height:23px;
+	font: 12px/23px Arial, sans-serif;
+	background-color:#fcfcfc;
+}*/
+#content ul.newList {
+	list-style:none;
+}

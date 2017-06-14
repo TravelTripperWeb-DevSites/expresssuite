@@ -1,0 +1,415 @@
+@font-face {
+  font-family: 'latolight';
+  src: url("../../fonts/lato-light-webfont.eot");
+  src: url("../../fonts/lato-light-webfontd41d.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato-light-webfont.woff") format("woff"), url("../../fonts/lato-light-webfont.ttf") format("truetype"), url("../../fonts/lato-light-webfont.svg#latolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latobold';
+  src: url("../../fonts/lato-bold-webfont.eot");
+  src: url("../../fonts/lato-bold-webfontd41d.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato-bold-webfont.woff") format("woff"), url("../../fonts/lato-bold-webfont.ttf") format("truetype"), url("../../fonts/lato-bold-webfont.svg#latobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latoregular';
+  src: url("../../fonts/lato-regular-webfont.eot");
+  src: url("../../fonts/lato-regular-webfontd41d.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato-regular-webfont.woff") format("woff"), url("../../fonts/lato-regular-webfont.ttf") format("truetype"), url("../../fonts/lato-regular-webfont.svg#latoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'mulilight';
+  src: url("../../fonts/muli-light-webfont.eot");
+  src: url("../../fonts/muli-light-webfontd41d.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-light-webfont.woff") format("woff"), url("../../fonts/muli-light-webfont.ttf") format("truetype"), url("../../fonts/muli-light-webfont.svg#mulilight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.admin .preview-item {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  padding: 20px;
+  height: auto;
+  font-smoothing: antialiased;
+}
+
+#parallax-promos {
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+  z-index: 30;
+}
+.admin .preview-item #parallax-promos {
+  padding: 20px;
+}
+#parallax-promos .slideshow {
+  font-size: 0;
+  margin: 0 auto;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 0 50px;
+  height: 100%;
+  left: 50%;
+  margin-left: -600px;
+  width: 1200px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #parallax-promos .slideshow {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-left: -370px;
+    width: 740px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  #parallax-promos .slideshow {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-left: -160px;
+    width: 320px;
+  }
+}
+#parallax-promos .center-column {
+  max-width: 100%;
+  height: 400px;
+  overflow: hidden;
+  padding: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #parallax-promos .center-column {
+    height: 370px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  #parallax-promos .center-column {
+    height: 320px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #parallax-promos {
+    padding: 20px 0 50px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  #parallax-promos {
+    padding: 10px 0 40px;
+  }
+}
+#parallax-promos #arrows a {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-indent: -9999px;
+  width: 31px;
+  height: 59px;
+  margin-top: -29px;
+  z-index: 100;
+  background: url("../images/sprite.svg") 0 0 no-repeat;
+}
+.no-svg #parallax-promos #arrows a {
+  background-image: url("../images/sprite.png");
+}
+#parallax-promos #arrows a:hover {
+  background-position: -51px 0;
+}
+#parallax-promos #arrows a:active {
+  background-position: -102px 0;
+}
+#parallax-promos #arrows .next {
+  left: auto;
+  right: 0;
+  background-position: -153px 0;
+}
+#parallax-promos #arrows .next:hover {
+  background-position: -204px 0;
+}
+#parallax-promos #arrows .next:active {
+  background-position: -255px 0;
+}
+.promotiles-3 #parallax-promos #arrows, .promotiles-2 #parallax-promos #arrows, .promotiles-1 #parallax-promos #arrows {
+  display: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .promotiles-3 #parallax-promos #arrows {
+    display: block;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .promotiles-3 #parallax-promos #arrows, .promotiles-2 #parallax-promos #arrows {
+    display: block;
+  }
+}
+
+.parallax-promo-item {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  overflow: hidden;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .parallax-promo-item {
+    padding: 0 10px;
+    width: 370px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .parallax-promo-item {
+    width: 320px;
+  }
+}
+.admin .parallax-promo-item {
+  height: 370px;
+  width: 370px;
+}
+.admin .parallax-promo-item .wrapper {
+  width: auto;
+}
+.admin .parallax-promo-item .button {
+  background: none;
+  border-radius: 0;
+  height: 30px;
+  line-height: 30px;
+  border-width: 2px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.parallax-promo-item:first-child {
+  margin-left: 0;
+}
+.parallax-promo-item .thumbnail {
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.parallax-promo-item .wrapper {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  padding: 30px 20px 20px;
+  text-align: center;
+  white-space: normal;
+  z-index: 20;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .parallax-promo-item .wrapper {
+    left: 10px;
+    right: 10px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .parallax-promo-item .wrapper {
+    left: 0;
+    right: 0;
+  }
+}
+.parallax-promo-item h4 {
+  margin-bottom: 10px;
+}
+.parallax-promo-item h4 a {
+  text-decoration: none;
+  color: inherit;
+}
+.parallax-promo-item p {
+  margin-bottom: 15px;
+}
+.parallax-promo-item .button {
+  line-height: 30px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .parallax-promo-item .button {
+    line-height: 60px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .parallax-promo-item .button {
+    line-height: 60px;
+  }
+}
+.mobile .parallax-promo-item {
+  padding: 0;
+}
+.mobile .parallax-promo-item .wrapper {
+  left: 0;
+  right: 0;
+}
+
+#parallax-promos .bx-wrapper {
+  margin: 0 auto;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+#parallax-promos .bx-viewport {
+  -webkit-transform: translatez(0);
+          transform: translatez(0);
+}
+#parallax-promos .bx-wrapper .restaurant-promo {
+  margin-left: 0;
+  margin-right: 20px;
+}
+#parallax-promos .bx-controls-direction .bx-prev, #parallax-promos .bx-controls-direction .bx-next {
+  position: absolute;
+  top: 50%;
+  width: 31px;
+  height: 59px;
+  margin-top: -29px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url("../images/sprite.svg") 0 0 no-repeat;
+  z-index: 20;
+}
+.no-svg #parallax-promos .bx-controls-direction .bx-prev, .no-svg #parallax-promos .bx-controls-direction .bx-next {
+  background-image: url("../images/sprite.png");
+}
+#parallax-promos .bx-controls-direction .bx-prev {
+  left: -58px;
+}
+#parallax-promos .bx-controls-direction .bx-prev:hover {
+  background-position: -51px 0;
+}
+#parallax-promos .bx-controls-direction .bx-prev:active {
+  background-position: -102px 0;
+}
+#parallax-promos .bx-controls-direction .bx-next {
+  right: -58px;
+  background-position: -153px 0;
+}
+#parallax-promos .bx-controls-direction .bx-next:hover {
+  background-position: -204px 0;
+}
+#parallax-promos .bx-controls-direction .bx-next:active {
+  background-position: -255px 0;
+}
+#parallax-promos .bx-pager {
+  bottom: 0;
+}
+.tablet #parallax-promos .bx-pager {
+  bottom: -33px;
+}
+.mobile #parallax-promos .bx-pager {
+  bottom: -28px;
+}
+#parallax-promos .bx-pager .bx-pager-link {
+  background-position: -110px -79px;
+}
+#parallax-promos .bx-pager .bx-pager-link:hover {
+  background-position: -148px -79px;
+}
+#parallax-promos .bx-pager .bx-pager-link.active {
+  background-position: -186px -79px;
+}
+
+#parallax-promos {
+  background: #041c2c;
+  padding: 30px 0;
+}
+#parallax-promos .center-column {
+  height: 370px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #parallax-promos .center-column {
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  #parallax-promos .center-column {
+    height: 320px;
+  }
+}
+
+.parallax-promo-item {
+  color: #fff;
+}
+.parallax-promo-item .wrapper {
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(87, 38, 0, 0)), color-stop(100%, rgba(4, 28, 44, 0.9)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(87, 38, 0, 0) 0%, rgba(4, 28, 44, 0.9) 100%);
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(87, 38, 0, 0) 0%, rgba(4, 28, 44, 0.9) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00572600', endColorstr='#e6572600',GradientType=0 );
+  /* IE6-9 */
+}
+.admin .parallax-promo-item .wrapper {
+  left: 0;
+  right: 0;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+.parallax-promo-item h4 {
+  font: 20px/1.2 "latoregular", sans-serif;
+  color: #fff;
+}
+.parallax-promo-item h4 a:hover {
+  color: #fff;
+}
+.admin .preview-item .parallax-promo-item h4 a {
+  color: #fff;
+}
+.admin .preview-item .parallax-promo-item h4 a:hover {
+  color: #fff;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .parallax-promo-item h4 {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .parallax-promo-item h4 {
+    font-size: 24px;
+  }
+}
+.parallax-promo-item p {
+  font-family: "latoregular", sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .parallax-promo-item p {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .parallax-promo-item p {
+    font-size: 18px;
+  }
+}
+.parallax-promo-item .button {
+  border-color: #a78f61;
+  color: #fff;
+  background: #a78f61;
+}
+.parallax-promo-item .button:hover {
+  background-color: #dcc08a;
+  border-color: #dcc08a;
+  color: #fff;
+}
+.admin .parallax-promo-item .button {
+  font: 13px/29px "latoregular", sans-serif;
+  padding: 0 35px;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  border-color: #a78f61;
+  color: #fff;
+  background: #a78f61;
+  text-shadow: none;
+}
+.admin .parallax-promo-item .button:hover {
+  background-color: #dcc08a;
+  border-color: #dcc08a;
+  color: #fff;
+}

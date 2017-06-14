@@ -1,0 +1,38 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+
+$primary-regular: "BaskervilleMTW01-Roman";
+$primary-semi-bold: "Baskerville MT W01 SmBd";
+$primary-semi-bold-italic: "BaskervilleMTW01-SmBdIt";
+$primary-italic: "Baskerville MT W01 It";
+$primary-bold-italic: "BaskervilleMTW01-BdIt";
+$primary-bold: "Baskerville MT W01 Bd";
+
+$secondary-book: "Gill Sans W01 Book";
+$secondary-light: "Gill Sans W01 Light";
+$secondary-medium: "Gill Sans W01 Medium";
+
+$heading: #a38d5e;
+$heading-two: #7c7b7a;
+$text: #0b0b0b;
+$white: #fff;
+$red: #a2100f;
+$line: #c6c4c3;
+$lightgray: #c3c1c1;
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import 
+        "bootstrap",
+        "anniversary",
+        "anniversarymiddle",
+		"anniversary-triumph",
+		"anniversary-tabs",
+		"anniversary-modal-popup"
+;

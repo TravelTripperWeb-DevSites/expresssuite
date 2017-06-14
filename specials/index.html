@@ -1,0 +1,49 @@
+---
+layout: default
+title: NYC Hotel Deals | Triumph Hotels
+excerpt: Book NYC hotel deals with Triumph Hotels, offering exclusive specials and packages throughout Manhattan.
+class: vcard 
+parent: specials
+---
+
+     <div class="innerpage" id="viewport">
+         <div id="photos">
+            <div class="slideshow">
+               <figure> <img src="/assets/images/cms/cache/1400x998/49/382-49cab1af4b319bf29709758666a3a4fc.jpg"> </figure>
+               <figure> <img src="/assets/images/cms/cache/1400x998/e3/43-e389169017268e77fffb1a17fa9745eb.jpg"> </figure>
+            </div>
+         </div>
+        
+         <div id="content-area" class="closed">
+            <section id="content">
+                {% regionblock  specials_content %}
+               <h1>NYC Hotel Deals</h1>
+               <h2>Classic Comfort & Affordable Rates</h2>
+               <p>Just as each of Triumph’s hotel properties provides a unique window on the city, each of our NYC hotel deals offers a distinct and unmistakably ‘New York’ experience. From romance packages that offer seclusion in upscale settings to family travel promotions that place the city at your fingertips to business travel amenities that streamline every stay, Triumph Hotels’ New York vacation packages make exploring this legendary city easy and accessible. Be sure to check back often as our NYC hotel packages are updated frequently.</p>
+               <hr>
+               <h3>Special Offers</h3>
+              {% endregionblock %}
+              {% assign special_offers = site.data._models.special-offers | sort : "sort_order"  %}         
+        
+        {% for specialoffer in special_offers %} 
+       
+            {% assign mod = forloop.index | modulo: 2 %}
+
+               <article class="special {% if mod != 0 %}odd{% endif %}">
+                  <h3><a href="/specials/{{specialoffer.url_friendly_name}}/">{{specialoffer.title}}</a></h3>
+                  <p class="thumbnail"><a href="/specials/{{specialoffer.url_friendly_name}}/"><img src="{{specialoffer.offer_image.url}}" alt="" title="{{specialoffer.thumb_alt_text}}"></a></p>
+                 {{specialoffer.short_desc}}
+                  <nav><a href="/specials/{{specialoffer.url_friendly_name}}/" class="button">{{specialoffer.readmore_btn_text}}</a> 
+                  {% if specialoffer.book_pkg_online != '' %}<a class="button" href="{{specialoffer.book_btn_link}}" target="_blank" rel="nofollow">{{specialoffer.book_pkg_online}}</a> {% endif %}
+                  </nav>
+               </article>
+         {% endfor %} 
+               <!--<article class="special">
+                  <h3><a href="/specials/triumph-hotels-and-sparkbox-toys/">Triumph Hotels and Sparkbox Toys</a></h3>
+                  <p class="thumbnail"><a href="/specials/triumph-hotels-and-sparkbox-toys/"><img src="/assets/images/cms/cache/125x94/bd/466-bd2e4d59dfb24329a38da1f880c396c2.jpg" alt="" title="Triumph Hotels and Sparkbox Toys"></a></p>
+                  <p>Triumph Hotels and Sparkbox Toys Exclusive Partnership!</p>
+                  <nav><a href="/specials/triumph-hotels-and-sparkbox-toys/" class="button">Read More</a> </nav>
+               </article>-->
+            </section>
+         </div>
+         

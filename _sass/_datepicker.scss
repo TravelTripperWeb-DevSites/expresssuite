@@ -1,0 +1,117 @@
+table.jCalendar {
+	width:160px;
+	margin:0;
+	border-collapse:collapse;
+}
+
+table.jCalendar th {
+	color:#a78f61;
+	font-weight:normal;
+	text-align:center;
+	text-transform:uppercase;
+	height:25px;
+	overflow:hidden;
+	vertical-align:middle;
+	padding:0;
+	margin:0;
+}
+table.jCalendar td {
+	background:#fff;
+	border:1px solid #f2f2f2;
+	font-size:11px;
+	text-align:center;
+	line-height:22px;
+	height:22px;
+	vertical-align:middle;
+	cursor:pointer;
+	padding:0;
+	margin:0;
+	color:#535353;
+}
+table.jCalendar td.today {
+	background:#003057;
+	color:#fff;
+}
+table.jCalendar td.dp-hover {
+	color:#fff;
+	background:#a78f61;
+}
+table.jCalendar td.selected {
+	color:#fff;
+	background:#a78f61;
+}
+table.jCalendar td.disabled, table.jCalendar td.disabled.dp-hover, table.jCalendar td.other-month {
+	color:#ccc;
+	text-decoration:none;
+	cursor:default;
+	background:none;
+	text-shadow:none;
+}
+
+div.dp-popup {
+	position:relative;
+	font-size:10px;
+	padding:0;
+}
+div#dp-popup {
+	border:1px solid #a78f61;
+	background:#fff;
+	overflow:hidden;
+	position:absolute;
+	z-index:9999;
+
+	box-shadow:1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+div.dp-popup h2 {
+	background:#fff;
+	color: #231f20;
+	text-align:center;
+	font-size:13px;
+	line-height:32px;
+	margin:0;
+	padding:0;
+}
+
+div.dp-popup div.dp-nav-prev, div.dp-popup div.dp-nav-next {
+	position:absolute;
+	top:10px;
+}
+div.dp-popup div.dp-nav-prev { left:6px; }
+div.dp-popup div.dp-nav-next { right:6px; }
+div.dp-popup div.dp-nav-prev a, div.dp-popup div.dp-nav-next a {
+	cursor:pointer;
+	display:block;
+	width:12px;
+	height:12px;
+	overflow:hidden;
+	text-indent:-9999px;
+	background:url('../images/sprite.svg') no-repeat;
+	opacity:0.7;
+}
+.nosvg div.dp-popup div.dp-nav-prev a, .nosvg div.dp-popup div.dp-nav-next a {
+	background:url('../images/sprite.png') no-repeat;
+}
+
+div.dp-popup div.dp-nav-prev a { background-position:-44px -33px !important; }
+div.dp-popup div.dp-nav-prev a:hover { opacity:1; }
+div.dp-popup div.dp-nav-prev a:active {
+	top:auto;
+	left:-1px;
+}
+div.dp-popup a.disabled { display:none; }
+div.dp-popup div.dp-nav-next a { background-position:-73px -33px  !important; }
+div.dp-popup div.dp-nav-next a:hover { opacity:1; }
+div.dp-popup div.dp-nav-next a:active {
+	top:auto;
+	right:-1px;
+}
+
+a.dp-choose-date {
+	background:url(../images/common.png) 0 -105px;
+	width: 13px;
+	height: 13px;
+	margin: 0;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+a.dp-choose-date:hover { background-position: -31px -105px; }

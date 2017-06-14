@@ -1,0 +1,50 @@
+
+
+<ul>
+
+    {% for items in obj.topmenu %} 
+       
+        {% if items.dropdown == "yes" %}
+          <li class="parent">
+                   <a href="{{items.url}}"  
+                   {% if items.parent == page.parent %}
+                     class="active" 
+                    {% endif %} 
+                   >{{items.name}}</a> 
+                   <ul>
+                   {% for subitems in items.drop-links %}
+                      {% if subitems.dropdown == "yes" %}
+                         <li class="parent">
+                                  <a href="{{subitems.url}}">{{subitems.name}}</a> 
+                                  <ul>
+                                  {% for subitem in subitems.drop-links %}
+                                     <li> <a href="{{subitem.url}}">{{subitem.name}}</a> </li>
+                                  {% endfor %}
+                                  </ul>
+                          </li>
+                        {% else if %}
+
+                          
+                          <li> <a href="{{subitems.url}}">{{subitems.name}}</a> </li>
+
+                        {% endif %}
+                      
+                   {% endfor %}
+                   </ul>
+           </li>
+         {% else if %}
+
+           
+           <li> <a href="{{items.url}}"  {% if items.parent == page.parent %}
+                     class="active" 
+                    {% endif %} >{{items.name}}</a> 
+           {% if items.parent == "home" || items.name == "Home" %}
+             <span><a class="firstelement" href="/">Back to the homepage</a></span> 
+           {% endif %} 
+           </li>
+
+         {% endif %}
+ 
+    {% endfor %}
+              
+            </ul>

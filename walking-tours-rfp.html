@@ -1,0 +1,69 @@
+---
+layout: default
+title: NYC Tours | Tour Reservations | Triumph Hotels
+excerpt: Submit a request for proposal to reserve your spot to complimentary Streetwise NYC tours, courtesy of Triumph Hotels.
+class: vcard 
+parent: walkingtours
+---
+
+    <div class="innerpage" id="viewport">
+         <div id="photos">
+            <div class="slideshow">
+               <figure> <img src="/assets/images/cms/cache/1400x998/49/382-49cab1af4b319bf29709758666a3a4fc.jpg"> </figure>
+            </div>
+         </div>
+         {% regionblock  walking-tours-rfp_content %}
+         <div id="content-area" class="closed">
+            <section id="content">
+               <h1>Reserve Your Spot for Our Complimentary NYC Tours</h1>
+               <h2>Submit a Request for Reservation</h2>
+               <p>Reserve your spot to enjoy complimentary NYC Walking Tours with <em><a href="http://streetwisenewyork.com/" onclick="" target="_blank">Streetwise</a></em>, courtesy of Triumph Hotels. Our Manhattan walking tours start at 9:30a.m. from Wednesday through Sunday starting in front of <a href="/hotels" onclick="" target="_blank">our seven hotels</a>. Click <a href="http://www.triumphhotels.com/walkingtours" onclick="" target="_blank">here</a> to view the entire schedule. All tour reservations are accepted starting two weeks in advance of arrival and are based on availability. For more information, please contact the concierge of your hotel or the front desk.</p>
+                <p></p>
+                <div></div>
+                <script type="text/javascript"> $(document).ready(function(){ if($("#walking_tours_rfp").attr('autocomplete') != 'false'){ $("#walking_tours_rfp").sisyphus({ excludeFields: $("input[autocomplete=off],input[type=hidden],#pingpon,input[name=pongpong],input[name=creditcard].datepicker,.creditcard"), locationBased: true, autoRelease: false, onRestore: function(){ if($.fn.sSelect){ $.each($("#walking_tours_rfp select"), function(){ var id = $(this).attr('id'); $('#'+id).getSetSSValue($('#'+id).val()); }); } $("#walking_tours_rfp").trigger('populated'); } }); } if('undefined' !== typeof _satellite) { var focus_flag = true; _satellite.setVar('form-name','walking_tours_rfp'); $("#walking_tours_rfp").find('input, select, textarea').each(function() { $(this).focus(function () { if (focus_flag) { _satellite.track("form_focus"); focus_flag = false; } }); }); } }); </script><script type="text/javascript"> rfp_flag = false; $(document).ready(function(){ $("#walking_tours_rfp").submit(function (e) { if(rfp_flag || typeof($.validationEngine) == 'undefined') return; e.preventDefault(); if($("#walking_tours_rfp").validationEngine('validate')){ rfp_flag = true; $("#walking_tours_rfp").sisyphus().manuallyReleaseData(); $('#submit_ok').attr('disabled', 'disabled').val('Submitting ...'); $("#walking_tours_rfp").append('<input type="hidden" name="submit_ok" value="Submit" >'); if('undefined' !== typeof _satellite) { _satellite.track("form_submit"); setTimeout(function () { $("#walking_tours_rfp").submit(); }, 1000); } else if(('undefined' !== typeof s_account) && ('undefined' !== typeof s_gi)){ var s=s_gi(s_account); s.linkTrackVars='events,eVar2'; s.linkTrackEvents='event4'; s.events='event4'; s.eVar2='Walking Tours RFP'; (s.tl(this,'o','Lead Completed') ); setTimeout(function () { $("#walking_tours_rfp").submit(); }, 1000); } else { $("#walking_tours_rfp").submit(); } } }); }) </script>
+               <form class="form"action="https://submit.jotform.me/submit/63052685502453/" method="post" name="form_63052685502453" id="63052685502453" accept-charset="utf-8"><input type="hidden" name="formID" value="63052685502453" />
+                  <fieldset id="information">
+                     <legend></legend>
+                     <h3>Information:</h3>
+                     <p class="type_text odd2 two_odd1 text" id="row_first_name"> <label for="first_name"><em>*</em>First Name:</label><input type="text"  name="q3_firstName3"  id="first_name" value="" class="validate[required,length[0,50]] text " maxlength="50"></p>
+                     <p class="type_text odd1 two_odd1 text odd" id="row_last_name"> <label for="last_name"><em>*</em>Last Name:</label><input type="text" name="q4_lastName"  id="last_name" value="" class="validate[required,length[0,50]] text odd " maxlength="50"></p>
+                     <p class="type_text odd2 two_odd2 text" id="row_email"> <label for="email"><em>*</em>Email Address:</label><input type="text" name="q6_email" id="email" value="" class="validate[required,length[0,50],custom[email]] text " maxlength="50"></p>
+                     <p class="type_text odd1 two_odd2 text odd" id="row_phone"> <label for="phone"><em>*</em>Phone Number:</label><input type="text" name="q5_phoneNumber" id="phone" value="" class="validate[required,length[0,50]] text odd " maxlength="50"></p>
+                     <p class="type_dropdown odd2 two_odd1 text" id="row_wheretostay">
+                        <label for="wheretostay"><em>*</em>Hotel You Are Staying With:</label>
+                        <select  name="q7_hotelYou" id="wheretostay" class="validate[required,length[0,50]] text ">
+                           <option value="" selected>Select:</option>
+                           <option value="The Iroquois New York"> The Iroquois New York </option>
+            <option value="Hotel Chandler"> Hotel Chandler </option>
+            <option value="Hotel Belleclaire"> Hotel Belleclaire </option>
+            <option value="The Evelyn"> The Evelyn </option>
+            <option value="Cosmopolitan Hotel - TriBeCa"> Cosmopolitan Hotel - TriBeCa </option>
+            <option value="Washington Jefferson Hotel"> Washington Jefferson Hotel </option>
+            <option value="Hotel Edison "> Hotel Edison </option>
+                        </select>
+                     </p>
+                     <p class="type_datepicker odd1 two_odd1 text odd" id="row_desiredwalkingtourdate"> <label for="desiredwalkingtourdate"><em>*</em>Desired Walking Tour Date:</label> <input type="text"  name="q8_desiredWalking" id="desiredwalkingtourdate" value="" class="date-pick datepicker_input validate[required,length[0,50]] text odd "></p>
+                     <p class="type_checkbox odd2 two_odd2 " id="row_availablewalkingtours"> <label> Available Walking Tours:</label> <span class="group checkbox-group"><label for="availablewalkingtours_times_square-rockefeller_center-the_edison_hotel-tuesdays"><input type="checkbox"  id="availablewalkingtours_times_square-rockefeller_center-the_edison_hotel-tuesdays" name="q9_availableWalking[]" value="Times Square/Rockefeller Center - Hotel Edison - Tuesdays" class="validate[optional,length[0,128]] ">Times Square/Rockefeller Center - Hotel Edison - Tuesdays</label><label for="availablewalkingtours_hotel_belleclaire_tour"><input type="checkbox"  id="availablewalkingtours_hotel_belleclaire_tour" name="q9_availableWalking[]" value="Upper West Side/Central Park - Hotel Belleclaire - Wednesdays" class="validate[optional,length[0,128]] ">Upper West Side/Central Park - Hotel Belleclaire - Wednesdays</label><label for="availablewalkingtours_washington_jefferson_hotel_tour"><input type="checkbox"  id="availablewalkingtours_washington_jefferson_hotel_tour" name="q9_availableWalking[]" value="Hell's Kitchen/Theater District - Washington Jefferson Hotel - Thursdays"  class="validate[optional,length[0,128]] ">Hell's Kitchen/Theater District - Washington Jefferson Hotel - Thursdays</label><label for="availablewalkingtours_cosmopolitan_hotel_tour"><input type="checkbox"  id="availablewalkingtours_cosmopolitan_hotel_tour" name="q9_availableWalking[]" value="TriBeCa/Downtown - Cosmopolitan Hotel - Fridays" class="validate[optional,length[0,128]] ">TriBeCa/Downtown - Cosmopolitan Hotel - Fridays</label><label for="availablewalkingtours_hotel_chandler_tour"><input type="checkbox"  id="availablewalkingtours_hotel_chandler_tour" name="q9_availableWalking[]" value="Flatiron/NoMad - The Evelyn/Hotel Chandler - Saturdays" class="validate[optional,length[0,128]] ">Flatiron/NoMad - The Evelyn/Hotel Chandler - Saturdays</label><label for="availablewalkingtours_iroquois_new_york_tour"><input type="checkbox"   id="availablewalkingtours_iroquois_new_york_tour"name="q9_availableWalking[]" value="Midtown/Grand Central Station - Iroquois New York - Sundays" class="validate[optional,length[0,128]] ">Midtown/Grand Central Station - Iroquois New York - Sundays</label></span> </p>
+                     <p class="type_dropdown odd1 two_odd2 text" id="row_numberofguests">
+                        <label for="numberofguests"><em>*</em>Number of Guests:</label>
+                        <select  name="q10_numberOf" id="numberofguests" class="validate[required,length[0,50]] text ">
+                           <option value="" selected>Select:</option>
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                        </select>
+                     </p>
+                     <p class="type_textarea odd2 two_odd1 text odd" id="row_comments"> <label for="comments"> Comments:</label><textarea id="comments" name="q11_comments" cols="44" rows="5" class="validate[optional,length[0,3000]] text odd "></textarea></p>
+                  </fieldset>
+                   
+                  <fieldset class="controls">
+                     <legend></legend>
+                     <p><input type="submit" name="submit_ok" id="submit_ok" value="Submit" class="button"></p>
+                  </fieldset>
+               </form>
+               <div class="cln"></div>
+               <p></p>
+            </section>
+         </div>
+         {% endregionblock %}
